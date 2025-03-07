@@ -57,5 +57,9 @@ namespace WPF_1st_UI_Project
             this.NoteTextBox.Text = (string)value.Content;
         }
 
+        private void SupplierNameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            this.MassTextBox.Text = this.SupplierNameTextBox.Text;
+        }
     }
 }

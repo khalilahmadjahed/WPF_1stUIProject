@@ -97,7 +97,7 @@
 
             <!--Mass-->
             <TextBlock Text="Mass" Margin="0 10 0 0"/>
-            <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+            <TextBox x:Name="MassTextBox" IsReadOnly="True" Background="#eee" Padding="2"/>
             
             <!--Finish-->
             <TextBlock Text="Finish" Margin="0 10 0 0"/>
@@ -115,7 +115,7 @@
 
             <!--Supplier Name-->
             <TextBlock Text="Supplier Name" Margin="0 10 0 0"/>
-            <TextBox Padding="2"/>
+            <TextBox x:Name="SupplierNameTextBox" TextChanged="SupplierNameTextBox_TextChanged" Padding="2"/>
 
             <!--Supplier Code-->
             <TextBlock Text="Supplier Code" Margin="0 10 0 0"/>
