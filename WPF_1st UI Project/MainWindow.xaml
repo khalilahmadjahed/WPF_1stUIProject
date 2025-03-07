@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_1st_UI_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="400">
+        Title="WPF Basics" Height="800" Width="400" MinWidth="185">
 
     <Border Padding="10">
         <StackPanel>
@@ -27,12 +27,14 @@
             <TextBlock Text="Description"/>
             <TextBox Padding="2"/>
 
-            <!--Status-->
+            <!--Status and Revision-->
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
+
+                <!--Status-->
                 <StackPanel Grid.Column="0" Margin="0 0 10 0">
                     <TextBlock Text="Status"/>
                     <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
@@ -47,17 +49,17 @@
 
             <!--Part Number-->
             <TextBlock Text="Part Number"/>
-            <TextBox Padding="2"/>
+            <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
 
             <!--Raw Material-->
-            <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0 10 0 10"/>
+            <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0 10"/>
             
             <!--Material-->
             <TextBlock Text="Material"/>
-            <ComboBox/>
+            <ComboBox Padding="2"/>
 
             <!--Manufacturing Information-->
-            <TextBlock Text="Manufacturing Information" FontWeight="Bold" Margin="0 10 0 10"/>
+            <TextBlock Text="Manufacturing Information" FontWeight="Bold" Margin="0 10"/>
 
             <!--Work Centres-->
             <TextBlock Text="Work Centres" Margin="0 0 0 10"/>
@@ -99,13 +101,15 @@
             <!--Finish-->
             <TextBlock Text="Finish" Margin="0 10 0 0"/>
             <ComboBox>
-                <ComboBoxItem Content="Painted" IsSelected="True"/>
+                <ComboBoxItem IsSelected="True">Paintede</ComboBoxItem>
+                <ComboBoxItem>Not Pai ntede</ComboBoxItem>
             </ComboBox>
 
             <!--Purchase Information-->
             <TextBlock Text="Purchase Information" Margin="0 10 0 0"/>
             <ComboBox>
-                <ComboBoxItem Content="Rubber" IsSelected="True"/>
+                <ComboBoxItem IsSelected="True">Rubber</ComboBoxItem>
+                <ComboBoxItem>Not Rubber</ComboBoxItem>
             </ComboBox>
 
             <!--Supplier Name-->
