@@ -29,5 +29,16 @@ namespace WPF_1st_UI_Project
         {
             MessageBox.Show($"The Description Text: {DescriptionText.Text}");
         }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.WeldCheckBox.IsChecked = this.AssemblyCheckBox.IsChecked = this.PlasmaCheckBox.IsChecked = LaserCheckBox.IsChecked = this.PurchaseCheckBox.IsChecked
+                = this.LatheCheckBox.IsChecked = this.DrillCheckBox.IsChecked = this.FoldCheckBox.IsChecked = this.RollCheckBox.IsChecked = this.SawCheckBox.IsChecked = false;
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            this.LengthTextBox.Text += " " + ((CheckBox)sender).Content.ToString();
+        }
     }
 }
