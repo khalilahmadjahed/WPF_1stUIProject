@@ -44,6 +44,17 @@
                     <TextBox Padding="2"/>
                 </StackPanel>
             </Grid>
+
+            <!--Part Number-->
+            <TextBlock Text="Part Number"/>
+            <TextBox Padding="2"/>
+            
+            <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0 10 0 10"/>
+            
+            <!--Material-->
+            <TextBlock Text="Material"/>
+            <ComboBox/>
+
         </StackPanel>
     </Border>
 
