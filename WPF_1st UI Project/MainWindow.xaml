@@ -63,7 +63,7 @@
             <TextBlock Text="Work Centres" Margin="0 0 0 10"/>
             
             <!--CheckBoxes-->
-            <Grid>
+            <Grid Margin="0 0 0 10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -86,8 +86,44 @@
                     <CheckBox Content="Roll"/>
                     <CheckBox Content="Saw"/>
                 </StackPanel>
-                
             </Grid>
+
+            <!--Length-->
+            <TextBlock Text="Length"/>
+            <TextBox Padding="2"/>
+
+            <!--Mass-->
+            <TextBlock Text="Mass" Margin="0 10 0 0"/>
+            <TextBox IsReadOnly="True" Background="#eee" Padding="2"/>
+            
+            <!--Finish-->
+            <TextBlock Text="Finish" Margin="0 10 0 0"/>
+            <ComboBox>
+                <ComboBoxItem Content="Painted" IsSelected="True"/>
+            </ComboBox>
+
+            <!--Purchase Information-->
+            <TextBlock Text="Purchase Information" Margin="0 10 0 0"/>
+            <ComboBox>
+                <ComboBoxItem Content="Rubber" IsSelected="True"/>
+            </ComboBox>
+
+            <!--Supplier Name-->
+            <TextBlock Text="Supplier Name" Margin="0 10 0 0"/>
+            <TextBox Padding="2"/>
+
+            <!--Supplier Code-->
+            <TextBlock Text="Supplier Code" Margin="0 10 0 0"/>
+            <TextBox Padding="2"/>
+            
+            <!--Additional Information-->
+            <TextBlock Text="Additional Information" FontWeight="Bold" Margin="0 10 0 0"/>
+            
+            <!--Note-->
+            <TextBlock Text="Note" Margin="0 10 0 0"/>
+            <TextBox Padding="2"/>
+
+
 
 
         </StackPanel>
