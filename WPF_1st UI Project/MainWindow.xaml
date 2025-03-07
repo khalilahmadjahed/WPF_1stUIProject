@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_1st_UI_Project"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="WPF Basics" Height="800" Width="400" MinWidth="185">
 
     <Border Padding="10">
@@ -100,9 +101,9 @@
             
             <!--Finish-->
             <TextBlock Text="Finish" Margin="0 10 0 0"/>
-            <ComboBox>
-                <ComboBoxItem IsSelected="True">Paintede</ComboBoxItem>
-                <ComboBoxItem>Not Pai ntede</ComboBoxItem>
+            <ComboBox x:Name="FinishDropDown" SelectionChanged="FinishDropDown_SelectionChanged">
+                <ComboBoxItem IsSelected="True">Painted</ComboBoxItem>
+                <ComboBoxItem>Not Painted</ComboBoxItem>
             </ComboBox>
 
             <!--Purchase Information-->
@@ -125,7 +126,7 @@
             
             <!--Note-->
             <TextBlock Text="Note" Margin="0 10 0 0"/>
-            <TextBox Padding="2"/>
+            <TextBox x:Name="NoteTextBox" Padding="2"/>
         </StackPanel>
     </Border>
 

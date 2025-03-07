@@ -25,6 +25,12 @@ namespace WPF_1st_UI_Project
             InitializeComponent();
         }
 
+        //WindowLoad
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            FinishDropDown_SelectionChanged(this.FinishDropDown, null);
+        }
+
         private void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"The Description Text: {DescriptionText.Text}");
@@ -40,5 +46,16 @@ namespace WPF_1st_UI_Project
         {
             this.LengthTextBox.Text += " " + ((CheckBox)sender).Content.ToString();
         }
+
+        private void FinishDropDown_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (this.NoteTextBox == null)
+                return;
+
+            var combo = (ComboBox)sender;
+            var value = (ComboBoxItem)combo.SelectedValue;
+            this.NoteTextBox.Text = (string)value.Content;
+        }
+
     }
 }
