@@ -24,5 +24,10 @@ namespace WPF_1st_UI_Project
         {
             InitializeComponent();
         }
+
+        private void ApplyButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"The Description Text: {DescriptionText.Text}");
+        }
     }
 }
