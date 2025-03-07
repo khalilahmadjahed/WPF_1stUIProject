@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:WPF_1st_UI_Project"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="400">
-    <StackPanel>
+
+    <Border Padding="10">
+        <StackPanel>
+            <!--Buttons-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Apply" Margin="0 0 10 0"/>
+                <Button Grid.Column="1" Content="Reset" />
+                <Button Grid.Column="2" Content="Refresh" Margin="10 0 0 0"/>
+            </Grid>
+        </StackPanel>
+    </Border>
+
     
-    </StackPanel>
+        
 </Window>
